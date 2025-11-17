@@ -1,7 +1,7 @@
 # OCI Fundamentals Workshop
 
 ## STEP 1 : Create Compartment
-### Create compartments in an IAM tenancy to organize and isolate your cloud resources.
+### Objective: Create a compartment to logically organize cloud resources.
 
 1. Open the navigation menu and click **Identity & Security**. Under **Identity**, click **Compartments**
 
@@ -18,6 +18,7 @@
 4. Click **Create Compartment**
 
 ## STEP 2 : Create VCN
+### Objective: Create a Virtual Cloud Network (VCN) with necessary subnets, routing, security rules & gateways
 
 1. Open the navigation menu and click **Networking** &rarr; **Virtual Cloud Networks** 
 
@@ -44,6 +45,7 @@
     ![drawing](./SS/vcn/5.png) 
 
 ## STEP 3 : Create Compute Instance
+### Objective: Create a compute instance with public Access
 
 1. Open the navigation menu and click **Compute** &rarr; **Instances**
 
@@ -91,7 +93,7 @@
         - [Using Linux](./SSH/linux.md) <br>
 
 ## STEP 4 : Create a Block Volume 
-### Block volumes are detachable block storage devices that you can use to dynamically expand the storage capacity of an instance.
+### Objective: Create a block volume and attach it to the compute instance.
 
 1. Open the navigation menu and click **Storage**. Under **Block Storage**, click **Block Volumes**
 
@@ -158,6 +160,7 @@
     ![drawing](./SS/block_volume/7.png)
 
 ## STEP 5 : Create Dynamic Group and Policies
+### Objective: Allow OCI resources to access required services using identity-based rules.
 
 1. First, make sure you're using the right region - Israel Central (Jerusalem)
 
@@ -224,6 +227,7 @@
     ![drawing](./SS/lab2/7.png)
 
 ## STEP 6 : Create Bucket
+### Objective: Create an Object Storage bucket to store data.
 
 1. Click **Storage** &rarr; **Object Storage & Archive Storage** &rarr; **Buckets**
 
@@ -237,6 +241,7 @@
     ![drawing](./SS/lab2/9.png)
    
 ## STEP 7 : Create ADB (Autonomous AI Database)
+### Objective: Provision an Autonomous AI Database to store and manage workshop data.
 
 1. Open the navigation menu and click **Oracle AI Database** &rarr; **Autonomous AI Database** 
 
@@ -298,7 +303,8 @@
     ![drawing](./SS/lab2/16.png)
 
 
- ## STEP 8 : Open Port 5000 in VCN
+ ## STEP 8 : Configure Network Access
+ ### Objective: Open the required port (5000) in the VCN to allow inbound application traffic.
 
 1. Open the navigation menu and click **Networking** &rarr; **Virtual Cloud Networks**
 
@@ -330,7 +336,8 @@
 
     ![drawing](./SS/lab2/20.png)
 
-## STEP 9 : Git Clone
+## Retrieve Workshop Code
+### Objective: Clone the required Git repository to access the workshop files.
 
 Use one of below methods to connect to the compute instance you've created earlier today:<br>
     - [Using Cloud Shell](./SSH/cloud_shell.md)
@@ -354,7 +361,8 @@ Use one of below methods to connect to the compute instance you've created earli
         git clone https://github.com/OCISRAEL/OCIFundamentals-lab01
 
 
-## STEP 10 : Edit The Config File
+## STEP 10 : Update Configuration
+### Objective: Modify the config file to set the required workshop parameters.
 
 1. Change directory to the cloned folder "OCIFundamentals-lab-01" by running the following command:    
 
@@ -381,7 +389,8 @@ Use one of below methods to connect to the compute instance you've created earli
 5. After you've finished editing, press the "**esc**" key, then **"shift" + ":"** , then write **:wq** and finally press the "**enter**" key to save your changes
 
 
-## STEP 11 : Running The Application
+## STEP 11 : Run The Application
+### Objective: Start the application to validate the setup and confirm everything is functioning correctly.
 
 1. Install pip
 
@@ -411,6 +420,7 @@ you should get **sucess** on both times
 
 
 ## STEP 12 : Review The Application
+### Objective: Verify the application’s behavior and ensure all components are working as expected.
 
 1. Once you have successfully completed all these steps, your web application should look like this:
 
