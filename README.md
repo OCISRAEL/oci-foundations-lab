@@ -43,7 +43,7 @@
 
     ![drawing](./SS/vcn/5.png) 
 
-## STEP 3 : Create Compute Intance
+## STEP 3 : Create Compute Instance
 
 1. Open the navigation menu and click **Compute** &rarr; **Instances**
 
@@ -91,7 +91,7 @@
         - [Using Linux](./SSH/linux.md) <br>
 
 ## STEP 4 : Create a Block Volume 
-### Block volumes are detachable block storage devices that you can use to dynamically expand the storage capacity of an instance.
+#### Block volumes are detachable block storage devices that you can use to dynamically expand the storage capacity of an instance.
 
 1. Open the navigation menu and click **Storage**. Under **Block Storage**, click **Block Volumes**
 
