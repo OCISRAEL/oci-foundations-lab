@@ -1,4 +1,4 @@
-# OCI Fundamentals Workshop
+# OCI Foundation Workshop - The Lab
 
 ## STEP 1 : Create Compartment
 ### Objective: Create a compartment to logically organize cloud resources.
