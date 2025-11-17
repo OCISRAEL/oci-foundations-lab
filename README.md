@@ -16,7 +16,7 @@
 
 **STEP 1 : Create Dynamic Group and Policies**
 
-1. First, make sure you're using the right region - Israel Central (Jerusalem
+1. First, make sure you're using the right region - Israel Central (Jerusalem)
 
    ![drawing](./SS/lab2/1.png)
 
