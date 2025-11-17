@@ -128,7 +128,7 @@
 
 4. Click **Attach**
 
-5. Once ready. you instance will appear in the list:
+5. Once ready. your instance will appear in the list:
 
     ![drawing](./SS/block_volume/5.png)
 
@@ -336,7 +336,7 @@
 
     ![drawing](./SS/lab2/20.png)
 
-## Retrieve Workshop Code
+## STEP 9 : Retrieve Workshop Code
 ### Objective: Clone the required Git repository to access the workshop files.
 
 Use one of below methods to connect to the compute instance you've created earlier today:<br>
