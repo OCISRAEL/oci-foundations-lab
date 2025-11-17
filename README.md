@@ -157,7 +157,6 @@
 
     ![drawing](./SS/block_volume/7.png)
 
-
 ## STEP 5 : Create Dynamic Group and Policies
 
 1. First, make sure you're using the right region - Israel Central (Jerusalem)
@@ -224,7 +223,7 @@
 
     ![drawing](./SS/lab2/7.png)
 
-## STEP 2 : Create Bucket
+## STEP 6 : Create Bucket
 
 1. Click **Storage** &rarr; **Object Storage & Archive Storage** &rarr; **Buckets**
 
@@ -237,7 +236,7 @@
 ```⚠️Note: Save the bucket's name, you'll need it later⚠️```
     ![drawing](./SS/lab2/9.png)
    
- **STEP 3 : Create ADB (Autonomous AI Database)**
+## STEP 7 : Create ADB (Autonomous AI Database)
 
 1. Open the navigation menu and click **Oracle AI Database** &rarr; **Autonomous AI Database** 
 
@@ -299,7 +298,7 @@
     ![drawing](./SS/lab2/16.png)
 
 
-**STEP 4 : Open Port 5000 in VCN**
+ ## STEP 8 : Open Port 5000 in VCN
 
 1. Open the navigation menu and click **Networking** &rarr; **Virtual Cloud Networks**
 
@@ -331,7 +330,7 @@
 
     ![drawing](./SS/lab2/20.png)
 
-**STEP 5 : Git Clone**
+## STEP 9 : Git Clone
 
 Use one of below methods to connect to the compute instance you've created earlier today:
     - [Using Cloud Shell](./SSH/cloud_shell.md)
@@ -355,7 +354,7 @@ Use one of below methods to connect to the compute instance you've created earli
         git clone https://github.com/OCISRAEL/OCIFundamentals-lab01
 
 
-**STEP 6 : Edit The Config File**
+## STEP 10 : Edit The Config File
 
 1. Change directory to the cloned folder "OCIFundamentals-lab-01" by running the following command:    
 
@@ -382,7 +381,7 @@ Use one of below methods to connect to the compute instance you've created earli
 5. After you've finished editing, press the "**esc**" key, then **"shift" + ":"** , then write **:wq** and finally press the "**enter**" key to save your changes
 
 
-**STEP 7 : Running The Application**
+## STEP 11 : Running The Application
 
 1. Install pip
 
@@ -411,7 +410,7 @@ you should get **sucess** on both times
         sudo kill -9 $(sudo lsof -t -i:5000)
 
 
-**STEP 8 : Review The Application**
+## STEP 12 : Review The Application
 
 1. Once you have successfully completed all these steps, your web application should look like this:
 
