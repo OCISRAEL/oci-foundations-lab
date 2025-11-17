@@ -91,7 +91,7 @@
         - [Using Linux](./SSH/linux.md) <br>
 
 ## STEP 4 : Create a Block Volume 
-#### Block volumes are detachable block storage devices that you can use to dynamically expand the storage capacity of an instance.
+### Block volumes are detachable block storage devices that you can use to dynamically expand the storage capacity of an instance.
 
 1. Open the navigation menu and click **Storage**. Under **Block Storage**, click **Block Volumes**
 
