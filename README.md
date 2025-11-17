@@ -332,7 +332,7 @@
 
 ## STEP 9 : Git Clone
 
-Use one of below methods to connect to the compute instance you've created earlier today:
+Use one of below methods to connect to the compute instance you've created earlier today:<br>
     - [Using Cloud Shell](./SSH/cloud_shell.md)
     - [Using Windows](./SSH/windows.md)
     - [Using Linux](./SSH/linux.md)
