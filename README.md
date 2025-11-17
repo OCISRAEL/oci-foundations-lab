@@ -1,18 +1,21 @@
 # OCI Fundamentals Workshop
 
+**STEP 1 : Create Compartment**
+### Create compartments in an IAM tenancy to organize and isolate your cloud resources.
 
-<ins>**PART 1 – DEMO LECTURES** </ins>
+1. Open the navigation menu and click **Identity & Security**. Under **Identity**, click **Compartments**
 
-* **FOLLOW Those Steps First:**
+<img src="../SS/compartment/1.png" alt="drawing" width="600">
 
-    1. Compartment [(Click here to create)](Demo%20Lectures/compartment.md)
-    2. IAM User, Group and Policy [(Click here to create)](Demo%20Lectures/iam_user_group_policy.md)
-    3. VCN [(Click here to create)](Demo%20Lectures/VCN.md)
-    4. Instance [(Click here to create)](Demo%20Lectures/compute.md)
-    5. Block Volume [(Click here to create)](Demo%20Lectures/block_volume.md)
+2. To create the compartment in the tenancy (root compartment) click **Create Compartment**
 
+3. Enter the following information:
+    1. **Name:** demo
+    2. **Description:** demo compartment
+    3. **Parent Compartment:** Keep the default value which is the root compartment
+    4. **Tags:** Skip this option
 
-<ins>**PART 2 – CREATE YOUR APPLICATION** </ins>
+4. Click **Create Compartment**
 
 **STEP 1 : Create Dynamic Group and Policies**
 
