@@ -1,6 +1,6 @@
 # OCI Fundamentals Workshop
 
-**STEP 1 : Create Compartment**
+# STEP 1 : Create Compartment
 ### Create compartments in an IAM tenancy to organize and isolate your cloud resources.
 
 1. Open the navigation menu and click **Identity & Security**. Under **Identity**, click **Compartments**
