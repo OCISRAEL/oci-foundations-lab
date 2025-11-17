@@ -156,7 +156,7 @@
     ```
 
     ![drawing](./SS/block_volume/7.png)
-
+<br>
 ## STEP 5 : Create Dynamic Group and Policies
 
 1. First, make sure you're using the right region - Israel Central (Jerusalem)
