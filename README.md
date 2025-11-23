@@ -355,26 +355,27 @@
 
 2. Select the VCN we created earlier **VCN-demo**
 
-3. In the **Subnets** tab, click **private subnet-<your_vcn_name>**
+3. Follow those steps for the **private** & **public** subnets in your VCN:
 
-4. In the **Security** tab, click **security list for private subnet-<your_vcn_name>>**
+    1. In the **Subnets** tab, click **private subnet-<your_vcn_name>**
 
-5. Select **Security rules** tab
+    2. In the **Security** tab, click **security list for private subnet-<your_vcn_name>>**
 
-6. Click **Add Ingress Rules** to save
+    3. Select **Security rules** tab
 
-7. Enter the following:
+    4. Click **Add Ingress Rules** to save
+
+    5. Enter the following:
     
-    1. **Source Type:** CIDR
-    2. **Source CIDR:** 0.0.0.0/0
-    3. **IP Protocol:** TCP
-    4. **Destination Port Range:** 5000
-    5. Click **Add Ingress Rules**
+        1. **Source Type:** CIDR
+        2. **Source CIDR:** 0.0.0.0/0
+        3. **IP Protocol:** TCP
+        4. **Destination Port Range:** 5000
+        5. Click **Add Ingress Rules**
+
+4. The newly created rules will be added to your security rules list of both subnets!
 
     ![drawing](./SS/lab2/19.png)
-
-8. The newly created rule will be added to the list
-
     ![drawing](./SS/lab2/20.png)
 
 ## STEP 9 : Create Load Balancer
