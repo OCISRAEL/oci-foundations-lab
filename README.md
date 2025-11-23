@@ -77,7 +77,7 @@
 
      ![drawing](./SS/compute/6.png)
 
-10. Scroll down and Click **Download Private Key** (required) to save it on your computer. Optionally, **Download Public Key** if you plan to reuse it later.
+10. Scroll down and Click **Download Private Key** (required) to save it on your computer ⚠️ You will need it later !!⚠️. Optionally, **Download Public Key** if you plan to reuse it later.
 
     ![drawing](./SS/compute/7.png)
 
@@ -87,12 +87,53 @@
 
     ![drawing](./SS/compute/8.png)
 
-13. To connect to the instance, use one of the following guides based on your environment:<br>
-        - [Using Cloud Shell](./SSH/cloud_shell.md) <br>
-        - [Using Windows](./SSH/windows.md) <br>
-        - [Using Linux](./SSH/linux.md) <br>
 
-## STEP 4 : Create a Block Volume 
+## STEP 4 : Connect to your VM via OCI Cloud Shell
+### Objective: Access your compute instance securely using OCI Cloud Shell.
+
+1. Click on **Cloud Shell** in the top right screen
+
+    ![drawing](./SS/cloud_shell/1.png)
+
+2. Wait for for **Cloud Shell** window to open
+
+3. Click on Network -> Ephermal Private Network
+
+    ![drawing](./SS/cloud_shell/2.png)
+
+4. Choose your **Private Subnet** in your **VCN-demo**
+
+    ![drawing](./SS/cloud_shell/3.png)
+
+5. Click **Use as active network**
+
+6. Wait for the **Network** to update with the new setting
+
+7. Make sure no previous **Private Keys** are exist with
+
+    ls -lth
+
+8. Click on **Upload** from the menu
+
+    ![drawing](./SS/cloud_shell/4.png)
+
+8. Upload your private key from **STEP 3**
+
+    ![drawing](./SS/cloud_shell/5.png)
+
+9. Verify the the key uploaded successfuly
+
+    ls -lth
+
+10. Run the the following ssh command with the private ip of the instance to connect
+
+    ssh -i <ssh-private-key> opc@<vm-private-ip>
+
+11. You should be able to connect to your VM
+
+    ![drawing](./SS/cloud_shell/6.png)       
+
+## STEP 5 : Create a Block Volume 
 ### Objective: Create a block volume and attach it to the compute instance.
 
 1. Open the navigation menu and click **Storage**. Under **Block Storage**, click **Block Volumes**
@@ -132,10 +173,7 @@
 
     ![drawing](./SS/block_volume/5.png)
 
-6. Connect to the instance by running the following command on your terminal:<br>
-        - [Using Cloud Shell](./SSH/cloud_shell.md) <br>
-        - [Using Windows](./SSH/windows.md) <br>
-        - [Using Linux](./SSH/linux.md) <br>
+6. Connect to the instance as desribed in **STEP 4**
 
 7. Verify that the disk has been successfully attached by executing the following command:
     ```
