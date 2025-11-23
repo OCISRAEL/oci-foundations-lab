@@ -309,9 +309,9 @@
 
     Instead of **[user:password@]** & **[user]** 
         
-        1. enter your database username and password **(Without the '[]'. With the @)**
+    1. enter your database username and password **(Without the '[]'. With the @)**
 
-        2. Instead of **[user]** enter your database admin user
+    2. Instead of **[user]** enter your database admin user
 
     It should looks like: *mongodb://**ADMIN**:**password**@G0D09E...F.adb.il-jerusalem-1.oraclecloudapps.com:27017/**ADMIN**?authMechanism...true*
 
