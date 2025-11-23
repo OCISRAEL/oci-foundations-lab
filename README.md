@@ -445,13 +445,13 @@
 
 4. Now, clone the git repository by running the following command:    
 
-        git clone https://github.com/OCISRAEL/OCIFundamentals-lab01
+        git clone https://github.com/OCISRAEL/oci-foundations-lab
 
 
 ## STEP 10 : Update Configuration
 ### Objective: Modify the config file to set the required workshop parameters.
 
-1. Change directory to the cloned folder "OCIFundamentals-lab-01" by running the following command:    
+1. Change directory to the cloned folder "oci-foundations-lab" by running the following command:    
 
         cd OCIFundamentals-lab-01
 
