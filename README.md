@@ -307,9 +307,11 @@
 
 8. Copy the connection string under **Public access URL** and edit it as follow: 
 
-    Instead of **[user:password@]** enter your database username and password **(Without the '[]'. With the @)**
+    Instead of **[user:password@]** & **[user]** 
+        
+        enter your database username and password **(Without the '[]'. With the @)**
 
-    Instead of **[user]** enter your database admin user
+        Instead of **[user]** enter your database admin user
 
     It should looks like: *mongodb://**ADMIN**:**password**@G0D09E...F.adb.il-jerusalem-1.oraclecloudapps.com:27017/**ADMIN**?authMechanism...true*
 
