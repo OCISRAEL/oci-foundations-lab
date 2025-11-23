@@ -110,9 +110,9 @@
 6. Wait for the **Network** to update with the new setting
 
 7. Make sure no previous **Private Keys** are exist with
-
+    ```
     ls -lth
-
+    ```
 8. Click on **Upload** from the menu
 
     ![drawing](./SS/cloud_shell/4.png)
@@ -126,9 +126,9 @@
     ls -lth
     ```
 10. Run the the following ssh command with the private ip of the instance to connect
-
+    ```
     ssh -i <ssh-private-key> opc@<vm-private-ip>
-
+    ```
 11. You should be able to connect to your VM
 
     ![drawing](./SS/cloud_shell/6.png)       
