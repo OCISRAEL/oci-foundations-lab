@@ -169,7 +169,7 @@
 
     ![drawing](./SS/block_volume/5.png)
 
-6. Connect to the instance as desribed in **STEP 4**
+6. Connect to the instance via **Cloud Shell** as desribed in **STEP 4**
 
 7. Verify that the disk has been successfully attached by executing the following command:
     ```
