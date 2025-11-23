@@ -305,19 +305,19 @@
 
 6. Scroll down the Tool configuration page until you find the **MongoDB API**
 
-8. Copy the connection string under **Public access URL** and edit it as follow: 
+8. Copy the connection string under **Public access URL** and edit it as follow:
+
+    ![drawing](./SS/lab2/12.png)
 
     Instead of **[user:password@]** & **[user]** 
         
     1. enter your database username and password **(Without the '[]'. With the @)**
 
-    2. Instead of **[user]** enter your database admin user
+    2. Instead of **[user]** enter your database admin user **(Without the '[]')**
 
     It should looks like: *mongodb://**ADMIN**:**password**@G0D09E...F.adb.il-jerusalem-1.oraclecloudapps.com:27017/**ADMIN**?authMechanism...true*
 
     ```⚠️Note: Your string name may differ depending on your setup⚠️```
-
-    ![drawing](./SS/lab2/12.png)
 
 9. ⚠️ Save the full string - you'll need it later ⚠️
 
