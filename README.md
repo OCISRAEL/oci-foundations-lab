@@ -122,9 +122,9 @@
     ![drawing](./SS/cloud_shell/5.png)
 
 9. Verify the the key uploaded successfuly
-
+    ```
     ls -lth
-
+    ```
 10. Run the the following ssh command with the private ip of the instance to connect
 
     ssh -i <ssh-private-key> opc@<vm-private-ip>
