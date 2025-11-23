@@ -121,15 +121,22 @@
     ```
     ls -lth
     ```
-10. Run the following SSH command with the private IP address of your instance to connect:
+
+10. update file permission:
+    ```
+    chmod 400 <private_key_file>
+    ```
+
+11. Run the following SSH command with the private IP address of your instance to connect:
     ```
     ssh -i <ssh-private-key> opc@<vm-private-ip>
     ```
-11. You should now be connected to your VM
+
+12. You should now be connected to your VM
 
     ![drawing](./SS/cloud_shell/6.png)      
 
-12. 💡 You can minimize Cloud Shell and restore it whenever you need it again
+13. 💡 You can minimize Cloud Shell and restore it whenever you need it again
 
 ## STEP 5 : Create a Block Volume 
 ### Objective: Create a block volume and attach it to the compute instance.
@@ -397,11 +404,11 @@
 
 7. Change the instace port to **5000**
 
-8. Specift the following **Health Check Policy:**
+8. Specify the following **Health Check Policy:**
 
     1. **Protocol:** TCP
     2. **Port:** 22
-    3. Leave other options with the default values
+    3. Leave all other options with their default values
 
 9. Set **Backend Set** name to: bs-demo
 
@@ -412,21 +419,21 @@
     1. **Name:** lb-listener-5000
     2. **Type of Traffic:** HTTP
     3. **Port:** 5000
-    4. Leave other options with the default values
+    4. Leave all other options with their default values
 
 12. Click **Next**
 
-13. Disable **Error Logs** button
+13. Disable **Error Logs**
 
-14. Click **Next** , Review and **Submit**
+14. Click **Next** , Review the configuration and click **Submit**
 
-15. Allow the service to finish and be **Healthy**
+15. Wait for the Load Balancer to finish provisioning and become **Healthy**
 
 16. Retrieve the **Load Balancer** public **IP Address** from the details tab
 
     ![drawing](./SS/lab2/23.png)
 
-⚠️Save it. You'll need it later⚠️
+⚠️Save this IP address. You'll need it later⚠️
 
 ## STEP 10 : Retrieve Workshop Code
 ### Objective: Clone the required Git repository to access the workshop files.
