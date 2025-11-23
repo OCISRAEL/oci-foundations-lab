@@ -73,7 +73,7 @@
 
 8. Click **Next** to reach **Networking**
 
-9. For **Primary Network**, select the VCN we created earlier today. Under **Subnet**, choose its Public Subnet.
+9. For **Primary Network**, select the VCN we created earlier today. Under Subnet, choose its **Private Subnet**.
 
      ![drawing](./SS/compute/6.png)
 
