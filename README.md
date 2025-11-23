@@ -319,7 +319,7 @@
 
     ```⚠️Note: Your string name may differ depending on your setup⚠️```
 
-9. ⚠️ Save the full string - you'll need it later ⚠️
+9. ⚠️ Save the full updated string - you'll need it later ⚠️
 
 10. Scroll up & Click **Database actions** and then **View all database actions**.
 
@@ -348,13 +348,9 @@
 
 2. Select the VCN we created earlier **VCN-demo**
 
-3. In the **Subnets** tab, click **Public Subnet-<your_vcn_name>**
+3. In the **Subnets** tab, click **private subnet-<your_vcn_name>**
 
-    ![drawing](./SS/lab2/17.png)
-
-4. In the **Security** tab, click Default **Security List for <your_vcn_name>**
-
-    ![drawing](./SS/lab2/18.png)
+4. In the **Security** tab, click **security list for private subnet-<your_vcn_name>>**
 
 5. Select **Security rules** tab
 
