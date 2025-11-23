@@ -91,45 +91,41 @@
 ## STEP 4 : Connect to your VM via OCI Cloud Shell
 ### Objective: Access your compute instance securely using OCI Cloud Shell.
 
-1. Click on **Cloud Shell** in the top right screen
+1. Click on **Cloud Shell** in the top-right corner of the OCI Console
 
     ![drawing](./SS/cloud_shell/1.png)
 
-2. Wait for for **Cloud Shell** window to open
+2. Wait for **Cloud Shell** window to open
 
-3. Click on Network -> Ephermal Private Network
+3. In the Cloud Shell toolbar, click **Network -> Ephermal Private Network**
 
     ![drawing](./SS/cloud_shell/2.png)
 
-4. Choose your **Private Subnet** in your **VCN-demo**
+4. Select your **Private Subnet** in **VCN-demo**
 
     ![drawing](./SS/cloud_shell/3.png)
 
 5. Click **Use as active network**
 
-6. Wait for the **Network** to update with the new setting
+6. Wait for Network settings to update.
 
-7. Make sure no previous **Private Keys** are exist with
-    ```
-    ls -lth
-    ```
-8. Click on **Upload** from the menu
+7. Click on **Upload** from the Cloud Shell menu
 
     ![drawing](./SS/cloud_shell/4.png)
 
-8. Upload your private key from **STEP 3**
+8. Upload your private key file from **STEP 3**
 
     ![drawing](./SS/cloud_shell/5.png)
 
-9. Verify the the key uploaded successfuly
+9. Verify that the key was uploaded successfully
     ```
     ls -lth
     ```
-10. Run the the following ssh command with the private ip of the instance to connect
+10. Run the following SSH command with the private IP address of your instance to connect:
     ```
     ssh -i <ssh-private-key> opc@<vm-private-ip>
     ```
-11. You should be able to connect to your VM
+11. You should now be connected to your VM
 
     ![drawing](./SS/cloud_shell/6.png)       
 
