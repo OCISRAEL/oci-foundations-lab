@@ -83,7 +83,7 @@
 
 11. Click **Next** to reach **Create**. Review and click
 
-12. Once done. Find and copy the **Public IPv4 address** and save it for later use
+12. Once done. Find and copy the assigned **Private IPv4 address** and save it for later use
 
     ![drawing](./SS/compute/8.png)
 
