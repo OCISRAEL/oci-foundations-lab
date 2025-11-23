@@ -127,7 +127,9 @@
     ```
 11. You should now be connected to your VM
 
-    ![drawing](./SS/cloud_shell/6.png)       
+    ![drawing](./SS/cloud_shell/6.png)      
+
+12. 💡 You can minimize Cloud Shell and restore it whenever you need it again
 
 ## STEP 5 : Create a Block Volume 
 ### Objective: Create a block volume and attach it to the compute instance.
