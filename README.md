@@ -431,9 +431,7 @@
 ## STEP 10 : Retrieve Workshop Code
 ### Objective: Clone the required Git repository to access the workshop files.
 
-1. Use **STEP 4** instruction to connect to your instance and run:
-
-        ssh  -i <your_ssh_key_full_path>.key opc@<instance_ip>
+1. Use **STEP 4** instruction to connect to your instance private **IP Address**
 
 2. Switch to root user by running the following command:    
 
@@ -448,12 +446,12 @@
         git clone https://github.com/OCISRAEL/oci-foundations-lab
 
 
-## STEP 10 : Update Configuration
+## STEP 11 : Update Configuration
 ### Objective: Modify the config file to set the required workshop parameters.
 
-1. Change directory to the cloned folder "oci-foundations-lab" by running the following command:    
+1. Change directory to the cloned folder:    
 
-        cd OCIFundamentals-lab-01
+        cd oci-foundations-lab
 
 2. Run the following command to edit the config file:
 
@@ -475,8 +473,9 @@
 
 5. After you've finished editing, press the "**esc**" key, then **"shift" + ":"** , then write **:wq** and finally press the "**enter**" key to save your changes
 
+6. Verify that the file changes has been saved
 
-## STEP 11 : Run The Application
+## STEP 12 : Run The Application
 ### Objective: Start the application to validate the setup and confirm everything is functioning correctly.
 
 1. Install pip
