@@ -355,11 +355,11 @@
 
 2. Select the VCN we created earlier **VCN-demo**
 
-3. Follow those steps for the **private** & **public** subnets in your VCN:
+3. Follow those steps for each of the **private** & **public** subnets in your VCN:
 
-    1. In the **Subnets** tab, click **private subnet-<your_vcn_name>**
+    1. In the **Subnets** tab, click **private subnet/public-<your_vcn_name>**
 
-    2. In the **Security** tab, click **security list for private subnet-<your_vcn_name>>**
+    2. In the **Security** tab, click **security list for private subnet/Default Security List for-<your_vcn_name>>**
 
     3. Select **Security rules** tab
 

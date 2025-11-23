@@ -1,6 +1,5 @@
 {
-  "CONNECTION_STRING": "mongodb://ADMIN:Oneoracle123#@GDB3A0655F367FA-ADBDBDEMO.adb.il-jerusalem-1.oraclecloudapps.com:27017/ADMIN?authMechanism=PLAIN&authSource=$external&ssl=true&retryWrites=false&loadBalanced=true
-",
-  "bucketName": "bucket-demo",
-  "coll_name": "collection-demo"
+  "CONNECTION_STRING": "<DB_CONNECTION_STRING>",
+  "bucketName": "<BUCKET_NAME>",
+  "coll_name": "<COLLECTION_NAME>"
 }
