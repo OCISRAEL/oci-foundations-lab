@@ -370,15 +370,68 @@
 
     ![drawing](./SS/lab2/20.png)
 
-## STEP 9 : Retrieve Workshop Code
+## STEP 9 : Create Load Balancer
+### Objective: Deploy a Load Balancer to distribute traffic across backend servers
+
+1. Open the navigation menu and click **Networking** &rarr; **Load Balancer**
+
+2. Click **Create load balancer**
+
+    ![drawing](./SS/lab2/21.png)
+
+3. Provide the following details:
+
+    1. **Name:** lb-demo
+    2. **Visibility:** Public
+    3. **Assign a public IP address:** Ephemeral
+    4. **Virtual Cloud Network:** VCN-demo
+    5. **Subnet:** public subnet
+
+4. Click **Next**
+
+5. Select backend servers by clicking **Add instances**
+
+6. Choose your instance from the list
+
+    ![drawing](./SS/lab2/22.png)
+
+7. Change the instace port to **5000**
+
+8. Specift the following **Health Check Policy:**
+
+    1. **Protocol:** TCP
+    2. **Port:** 22
+    3. Leave other options with the default values
+
+9. Set **Backend Set** name to: bs-demo
+
+10. Click **Next**
+
+11. Set Listener details:
+
+    1. **Name:** lb-listener-5000
+    2. **Type of Traffic:** HTTP
+    3. **Port:** 5000
+    4. Leave other options with the default values
+
+12. Click **Next**
+
+13. Disable **Error Logs** button
+
+14. Click **Next** , Review and **Submit**
+
+15. Allow the service to finish and be **Healthy**
+
+16. Retrieve the **Load Balancer** public **IP Address** from the details tab
+
+    ![drawing](./SS/lab2/23.png)
+
+⚠️Save it. You'll need it later⚠️
+
+## STEP 10 : Retrieve Workshop Code
 ### Objective: Clone the required Git repository to access the workshop files.
 
-Use one of below methods to connect to the compute instance you've created earlier today:<br>
-    - [Using Cloud Shell](./SSH/cloud_shell.md)
-    - [Using Windows](./SSH/windows.md)
-    - [Using Linux](./SSH/linux.md)
-
-1. [LINUX/MACOS/Windows] Open your terminal and run:
+1. Use **STEP 4** instruction to connect to your instance and run:
 
         ssh  -i <your_ssh_key_full_path>.key opc@<instance_ip>
 
