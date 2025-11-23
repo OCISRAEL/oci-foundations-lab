@@ -497,7 +497,7 @@ you should get **sucess** on both times
 
         python3 flask/OCIFundamentalWorkshop-Instance.py
 
-4. Navigate to the address **http://<your_instance_public_ip>:5000** in your browser and start uploading!
+4. Navigate to the address **http://<your_load_balancer_public_ip>:5000** in your browser and start uploading!
 
 
 * **If you get the errors "address already in use" or "the server couldnt be started, because another server runs on that port", simply run the following command:**
@@ -505,7 +505,7 @@ you should get **sucess** on both times
         sudo kill -9 $(sudo lsof -t -i:5000)
 
 
-## STEP 12 : Review The Application
+## STEP 13 : Review The Application
 ### Objective: Verify the application’s behavior and ensure all components are working as expected.
 
 1. Once you have successfully completed all these steps, your web application should look like this:

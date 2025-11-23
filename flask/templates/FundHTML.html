@@ -435,7 +435,6 @@
             <table
               id="filesTable"
               class="table table-hover"
-              data-toggle="table"
               data-search="true"
               data-pagination="true"
               data-page-size="10"
@@ -525,7 +524,7 @@
               <div class="form-group">
                 <label for="myFile">Choose a file</label>
                 <input type="file"
-                       class="form-control-file"
+                       class="form-control"
                        id="myFile"
                        name="myFile"
                        required />
@@ -568,7 +567,8 @@
 
     <script type="text/javascript">
       // Keep the same Jinja variable & structure so Python side keeps working
-      const temp = '{{data | tojson}}';
+      //const temp = '{{data | tojson}}';
+      const temp = '{{ data | default([], true) | tojson }}';
       let mydata = [];
 
       try {
