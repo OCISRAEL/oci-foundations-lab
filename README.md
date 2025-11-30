@@ -379,7 +379,7 @@
     ![drawing](./SS/lab2/20.png)
 
 ## STEP 10 : Create Load Balancer
-### Objective: Deploy a Load Balancer to distribute traffic across backend servers
+### Objective: Allow users to access the internal web application through an OCI load balancer
 
 1. Open the navigation menu and click **Networking** &rarr; **Load Balancer**
 
