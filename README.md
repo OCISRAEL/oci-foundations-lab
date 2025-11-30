@@ -202,7 +202,7 @@
 
     ![drawing](./SS/block_volume/7.png)
 
-## STEP 5 : Create Dynamic Group and Policies
+## STEP 6 : Create Dynamic Group and Policies
 ### Objective: Allow OCI resources to access required services using identity-based rules.
 
 1. First, make sure you're using the right region - Israel Central (Jerusalem)
@@ -269,7 +269,7 @@
 
     ![drawing](./SS/lab2/7.png)
 
-## STEP 6 : Create Bucket
+## STEP 7 : Create Bucket
 ### Objective: Create an Object Storage bucket to store data.
 
 1. Click **Storage** &rarr; **Object Storage & Archive Storage** &rarr; **Buckets**
@@ -283,7 +283,7 @@
 ```⚠️Note: Save the bucket's name, you'll need it later⚠️```
     ![drawing](./SS/lab2/9.png)
    
-## STEP 7 : Create ADB (Autonomous AI Database)
+## STEP 8 : Create ADB (Autonomous AI Database)
 ### Objective: Provision an Autonomous AI Database to store and manage workshop data.
 
 1. Open the navigation menu and click **Oracle AI Database** &rarr; **Autonomous AI Database** 
@@ -298,7 +298,7 @@
     2. **Database name:** adbdbdemo
     3. **Compartment:** demo
     4. For the workload type, choose **JSON**
-    5. Leave **Database Configuration** with default values
+    5. Swithc ON **Devloper Mode** and Leave **database version** with default value: 19c
     6. Set the password for the ADMIN database user in your new database - ⚠️**Don't use @ in password**⚠️
     7. **Access type:** Secure access from allowed IPs and VCNs only
     8. Set **IP notation type:** CIDR block & **Value:** 0.0.0.0/0 - ⚠️**For testing purpose only**⚠️
@@ -348,7 +348,7 @@
     ![drawing](./SS/lab2/16.png)
 
 
- ## STEP 8 : Configure Network Access
+ ## STEP 9 : Configure Network Access
  ### Objective: Open the required port (5000) in the VCN to allow inbound application traffic.
 
 1. Open the navigation menu and click **Networking** &rarr; **Virtual Cloud Networks**
@@ -378,7 +378,7 @@
     ![drawing](./SS/lab2/19.png)
     ![drawing](./SS/lab2/20.png)
 
-## STEP 9 : Create Load Balancer
+## STEP 10 : Create Load Balancer
 ### Objective: Deploy a Load Balancer to distribute traffic across backend servers
 
 1. Open the navigation menu and click **Networking** &rarr; **Load Balancer**
@@ -436,7 +436,7 @@
 
 ⚠️Save this IP address. You'll need it later⚠️
 
-## STEP 10 : Retrieve Workshop Code
+## STEP 11 : Retrieve Workshop Code
 ### Objective: Clone the required Git repository to access the workshop files.
 
 1. Use **STEP 4** instruction to connect to your instance private **IP Address**
@@ -454,7 +454,7 @@
         git clone https://github.com/OCISRAEL/oci-foundations-lab
 
 
-## STEP 11 : Update Configuration
+## STEP 12 : Update Configuration
 ### Objective: Modify the config file to set the required workshop parameters.
 
 1. Change directory to the cloned folder:    
@@ -483,7 +483,7 @@
 
 6. Verify that the file changes has been saved
 
-## STEP 12 : Run The Application
+## STEP 13 : Run The Application
 ### Objective: Start the application to validate the setup and confirm everything is functioning correctly.
 
 1. Install pip
@@ -513,7 +513,7 @@ you should get **sucess** on both times
         sudo kill -9 $(sudo lsof -t -i:5000)
 
 
-## STEP 13 : Review The Application
+## STEP 14 : Review The Application
 ### Objective: Verify the application’s behavior and ensure all components are working as expected.
 
 1. Once you have successfully completed all these steps, your web application should look like this:
