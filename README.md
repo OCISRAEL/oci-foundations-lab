@@ -174,7 +174,7 @@
 
     ![drawing](./SS/block_volume/4.png)
 
-4. Click **Attach** (Igonore the pop up message)
+4. Click **Attach** (Ignore the pop up message)
 
 5. Once ready. your instance will appear in the list:
 
