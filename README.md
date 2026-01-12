@@ -160,6 +160,8 @@
 
 1. Open the new **Block Volume** we just created
 
+2. Ignore the **Warnings**
+
 2. In the top panel click the **Attached Instances** tab, then click **Attach to Instance**
 
     ![drawing](./SS/block_volume/3.png)
