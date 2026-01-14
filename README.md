@@ -302,9 +302,10 @@
     4. For the workload type, choose **JSON**
     5. Switch **Devloper Mode** to ON and Leave **database version** with default value: 19c
     6. Set the password for the ADMIN database user in your new database - ⚠️**Don't use @ in password**⚠️
-    7. **Access type:** Secure access from allowed IPs and VCNs only
-    8. Set **IP notation type:** CIDR block & **Value:** 0.0.0.0/0 - ⚠️**For testing purpose only**⚠️
-    9. Skip on the **Contacts** section and click **Create**
+    7. ⚠️ SAVE ADMIN user & Password for later use ⚠️
+    8. **Access type:** Secure access from allowed IPs and VCNs only
+    9. Set **IP notation type:** CIDR block & **Value:** 0.0.0.0/0 - ⚠️**For testing purpose only**⚠️
+    10. Skip on the **Contacts** section and click **Create**
 
 4. Wait until your new Autonomous Database's status changes from **Provisioning** to **Available**
 
