@@ -528,3 +528,8 @@ you should get **sucess** on both times
 3. Check your **bucket**. Do you see the uploaded file?
 
 4. Check your **Autonomous Database** JSON collection. Do you see a new entry?
+
+
+## BONUS - Security Services
+
+1. Open the navigation menu and click **Identity & Security** &rarr; **Cloud Guard**
