@@ -533,3 +533,27 @@ you should get **sucess** on both times
 ## BONUS - Security Services
 
 1. Open the navigation menu and click **Identity & Security** &rarr; **Cloud Guard**
+
+2. Click **Enable Cloud Guard**
+
+3. Review the needed policy rules and click **Create Policy**
+
+4. Click **Next**
+
+5. Select your **Home Region**
+
+6. Select **All** compartments
+
+7. Leave all the rest as default
+
+8. Click **Enable**
+
+9. Click **Go to Cloud Guard** button to move to dashboard screen
+
+10. You can use the virtual tour to familiar your self with the service
+
+11. ⚠️ It might take a while to get detection alerts. Continue with the steps after you see some data ⚠️
+
+12. Click **Alerts** and review the **Problems**
+
+13. 
