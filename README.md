@@ -559,5 +559,3 @@ you should get **sucess** on both times
 11. ⚠️ It might take a while to get detection alerts. Continue with the steps after you see some data ⚠️
 
 12. Click **Alerts** and review the **Problems**
-
-13. 
