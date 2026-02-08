@@ -536,7 +536,11 @@ you should get **sucess** on both times
 
 2. Click **Enable Cloud Guard**
 
+    ![drawing](./SS/bonus/1.png)
+
 3. Review the needed policy rules and click **Create Policy**
+
+    ![drawing](./SS/bonus/1.png)
 
 4. Click **Next**
 
