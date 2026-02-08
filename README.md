@@ -540,7 +540,7 @@ you should get **sucess** on both times
 
 3. Review the needed policy rules and click **Create Policy**
 
-    ![drawing](./SS/bonus/1.png)
+    ![drawing](./SS/bonus/2.png)
 
 4. Click **Next**
 
