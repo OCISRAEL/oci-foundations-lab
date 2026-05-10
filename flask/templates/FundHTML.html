@@ -14,7 +14,7 @@
         <a class="brand" href="/" aria-label="OCI Drive home">
           <img
             class="brand-logo"
-            src="../static/oci-drive-logo.png"
+            src="../static/oci-drive-logo-mark.png"
             alt="OCI Drive"
           />
           <span>
@@ -68,15 +68,15 @@
             </a>
             <a class="side-link" href="#files">
               <i data-lucide="clock-3"></i>
-              <span>Recent</span>
+              <span>Recent Files</span>
             </a>
-            <a class="side-link" href="#upload">
+            <button class="side-link" type="button" data-open-upload>
               <i data-lucide="upload-cloud"></i>
-              <span>Upload Center</span>
-            </a>
-            <a class="side-link" href="#storage">
-              <i data-lucide="database"></i>
-              <span>Object Storage</span>
+              <span>Upload File</span>
+            </button>
+            <a class="side-link" href="mailto:david.azoulay@oracle.com">
+              <i data-lucide="mail"></i>
+              <span>Contact</span>
             </a>
           </nav>
 
@@ -96,13 +96,28 @@
             <span class="accent teal"></span>
             <span class="accent blue"></span>
           </div>
+
+          <div class="credit-panel">
+            <span>Made by</span>
+            <strong>Dudu Azoulay</strong>
+            <small>Cloud Solution Architect</small>
+            <a href="mailto:david.azoulay@oracle.com">david.azoulay@oracle.com</a>
+          </div>
         </aside>
 
         <main class="content">
           <section class="hero-band" aria-labelledby="pageTitle">
             <div>
               <p class="eyebrow">Oracle Cloud Infrastructure Workshop</p>
-              <h1 id="pageTitle">OCI Drive</h1>
+              <div class="hero-title-row">
+                <img
+                  class="hero-logo"
+                  src="../static/oci-drive-logo-mark.png"
+                  alt=""
+                  aria-hidden="true"
+                />
+                <h1 id="pageTitle">OCI Drive</h1>
+              </div>
               <p class="hero-copy">
                 A shared file workspace for hands-on labs, scripts, screenshots,
                 and student deliverables.
@@ -202,8 +217,7 @@
       </div>
 
       <footer class="footer">
-        <span>OCI Drive</span>
-        <span>Oracle IL | OCI Foundation Workshop</span>
+        <span>Copyright © 2026, Oracle and/or its affiliates</span>
       </footer>
     </div>
 
@@ -216,7 +230,7 @@
       >
         <div class="modal-header">
           <div>
-            <p class="eyebrow">Upload Center</p>
+            <p class="eyebrow">File Upload</p>
             <h2 id="uploadTitle">Add a file to OCI Drive</h2>
           </div>
           <button class="icon-button" type="button" data-close-upload aria-label="Close">
