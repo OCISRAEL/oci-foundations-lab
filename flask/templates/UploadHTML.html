@@ -1,111 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="utf-8" />
-    <title>Upload Successful | OCI Foundation Workshop</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Upload Complete | OCI Drive</title>
+    <link rel="preconnect" href="https://unpkg.com" />
+    <link rel="stylesheet" href="../static/oci-drive.css" />
+  </head>
 
-    <link rel="stylesheet"
-          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <body class="drive-body success-page">
+    <main class="success-shell">
+      <a class="brand success-brand" href="/" aria-label="OCI Drive home">
+        <img
+          class="brand-logo"
+          src="../static/oci-drive-logo.png"
+          alt="OCI Drive"
+        />
+        <span>
+          <strong>Workshop Workspace</strong>
+          <small>Oracle Cloud Infrastructure</small>
+        </span>
+      </a>
 
-    <style>
-        body {
-            margin: 0;
-            min-height: 100vh;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-                "Helvetica Neue", Arial, sans-serif;
-            background: radial-gradient(circle at top left, #1c2340 0, #050814 55%, #020309 100%);
-            color: #f8f9fa;
-            display: flex;
-            flex-direction: column;
-        }
+      <section class="success-panel" aria-labelledby="successTitle">
+        <div class="success-visual" aria-hidden="true">
+          <i data-lucide="check"></i>
+        </div>
 
-        .navbar-custom {
-            background: rgba(3, 7, 22, 0.95);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-        }
+        <p class="eyebrow">Upload Complete</p>
+        <h1 id="successTitle">{{ name }} is now in OCI Drive</h1>
+        <p>
+          The file was uploaded to the workshop storage flow and recorded for
+          the shared library.
+        </p>
 
-        .page-wrapper {
-            flex: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 40px 15px;
-        }
+        <div class="success-actions">
+          <a class="primary-action" href="/">
+            <i data-lucide="hard-drive"></i>
+            <span>Back to Drive</span>
+          </a>
+          <button class="secondary-action" type="button" data-open-upload>
+            <i data-lucide="plus"></i>
+            <span>Upload another</span>
+          </button>
+        </div>
+      </section>
+    </main>
 
-        .success-card {
-            max-width: 520px;
-            width: 100%;
-            background: rgba(3, 7, 30, 0.95);
-            border-radius: 1.25rem;
-            border: 1px solid rgba(255, 255, 255, 0.12);
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
-            padding: 1.8rem 1.9rem 1.6rem 1.9rem;
-            text-align: center;
-        }
+    <div class="modal-backdrop" id="uploadModal" hidden>
+      <div
+        class="modal-panel"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="uploadTitle"
+      >
+        <div class="modal-header">
+          <div>
+            <p class="eyebrow">Upload Center</p>
+            <h2 id="uploadTitle">Add another file</h2>
+          </div>
+          <button class="icon-button" type="button" data-close-upload aria-label="Close">
+            <i data-lucide="x"></i>
+          </button>
+        </div>
 
-        .success-icon {
-            font-size: 2.6rem;
-            margin-bottom: 0.6rem;
-        }
-
-        .success-title {
-            font-size: 1.4rem;
-            font-weight: 600;
-            margin-bottom: 0.4rem;
-        }
-
-        .success-subtitle {
-            font-size: 0.95rem;
-            color: #d7dbff;
-            margin-bottom: 1.2rem;
-        }
-
-        .btn-pill {
-            border-radius: 999px;
-            padding: 0.5rem 1.35rem;
-            font-weight: 500;
-        }
-
-        .footer {
-            border-top: 1px solid rgba(255, 255, 255, 0.08);
-            padding: 0.7rem 15px 0.9rem 15px;
-            font-size: 0.8rem;
-            color: #9ea3c8;
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
-    <!-- Simple top bar so it feels like part of the same site -->
-    <nav class="navbar navbar-dark navbar-custom">
-        <div class="container-fluid" style="max-width: 1100px;">
-            <span class="navbar-brand mb-0 h6">
-                OCI Foundation Workshop
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+          <label class="modal-file-picker" for="modalFile">
+            <i data-lucide="folder-up"></i>
+            <span>
+              <strong>Choose a local file</strong>
+              <small id="modalSelected">No file selected</small>
             </span>
-        </div>
-    </nav>
+          </label>
+          <input id="modalFile" name="myFile" type="file" required />
 
-    <div class="page-wrapper">
-        <div class="modal-dialog" role="document" style="margin: 0;">
-            <div class="modal-content success-card">
-                <div class="success-icon">✅</div>
-                <h4 class="success-title">
-                    '{{name}}' has been added successfully!
-                </h4>
-                <p class="success-subtitle">
-                    Your file is now available in the workshop files table.
-                    You can safely return to the main portal.
-                </p>
-                <a class="btn btn-primary btn-pill" href="/">
-                    ← Back to Workshop Portal
-                </a>
-            </div>
-        </div>
+          <div class="modal-actions">
+            <button class="secondary-action" type="button" data-close-upload>Cancel</button>
+            <button class="primary-action" type="submit">
+              <i data-lucide="cloud-upload"></i>
+              <span>Upload</span>
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
 
-    <div class="footer">
-        &copy; ORACLE IL · OCI Foundation Workshop
-    </div>
-</body>
+    <script>
+      window.OCI_DRIVE_DATA = [];
+    </script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="../static/oci-drive.js"></script>
+  </body>
 </html>
