@@ -368,18 +368,17 @@
         END;
         /
 
-11. Now, let's add a new collection to your database by clicking &nbsp; **{ } JSON** &nbsp; under the Development section and then **Open**.
+13. Expect: "PL/SQL procedure successfully completed" as output for succesful run
 
     ![drawing](./SS/lab2/14.png)
 
-8. Click **Create Collection**
+14. Let's verify the creation of the collection. Click on the top left corner logo **Database Actions**
 
     ![drawing](./SS/lab2/15.png)
 
-8. Enter the following:
-    
-    1. **Collection Name:** collection-demo - ⚠️Save it. You'll need it later⚠️
-    2. Click **Create**
+15. Under **Devlopment** choose &nbsp; **{ } JSON** &nbsp;
+
+16. Verify the creation of an empty collection 
 
     ![drawing](./SS/lab2/16.png)
 
