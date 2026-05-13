@@ -280,7 +280,7 @@
 
     ![drawing](./SS/lab2/8.png)
 
-3. Enter a name for your bucket,
+3. Enter a name for your bucket
 
 4. Leave Bucket scope as **Namespace**
 
@@ -338,6 +338,35 @@
 10. Scroll up & Click **Database actions** and then **View all database actions**.
 
     ![drawing](./SS/lab2/13.png)
+
+11. Choose **SQL**
+
+12. Copy the following SQL command to the worksheet to create new JSON DB with Mongo compability and run
+
+            DECLARE
+        l_status NUMBER;
+        l_collection SODA_COLLECTION_T;
+        BEGIN
+        -- Drop the incorrect collection if it exists.
+        l_status := DBMS_SODA.DROP_COLLECTION('MY_COLLECTION');
+
+        -- Recreate as MongoDB-compatible and empty.
+        l_collection := DBMS_SODA.CREATE_COLLECTION(
+            'MY_COLLECTION',
+            '{
+            "contentColumn"      : {"name"       : "DATA",
+                                    "sqlType"    : "BLOB",
+                                    "jsonFormat" : "OSON"},
+            "keyColumn"          : {"name"             : "ID",
+                                    "assignmentMethod" : "EMBEDDED_OID",
+                                    "sqlType"          : "VARCHAR2"},
+            "versionColumn"      : {"name" : "VERSION", "method" : "UUID"},
+            "lastModifiedColumn" : {"name" : "LAST_MODIFIED"},
+            "creationTimeColumn" : {"name" : "CREATED_ON"}
+            }'
+        );
+        END;
+        /
 
 11. Now, let's add a new collection to your database by clicking &nbsp; **{ } JSON** &nbsp; under the Development section and then **Open**.
 
