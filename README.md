@@ -280,7 +280,11 @@
 
     ![drawing](./SS/lab2/8.png)
 
-3. Enter a name for your bucket,then click **Create bucket** <br>
+3. Enter a name for your bucket,
+
+4. Leave Bucket scope as **Namespace**
+
+5. Click **Create bucket** <br>
 
 ```⚠️Note: Save the bucket's name, you'll need it later⚠️```
     ![drawing](./SS/lab2/9.png)
