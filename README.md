@@ -378,9 +378,11 @@
 
 15. Under **Devlopment** choose &nbsp; **{ } JSON** &nbsp;
 
-16. Verify the creation of an empty collection 
+16. Verify the creation of an empty collection with the name: **MY_COLLECTION** 
 
     ![drawing](./SS/lab2/16.png)
+
+⚠️ Save the name - you'll need it later ⚠️
 
 
  ## STEP 9 : Configure Network Access
