@@ -452,6 +452,7 @@
 
     1. **Protocol:** TCP
     2. **Port:** 22
+       ⚠️ **Demo only:** Using port **22** for the Load Balancer health check is not recommended for production environments. We use it here only to simplify this lab demo⚠️
     3. Leave all other options with their default values
 
 9. Set **Backend Set** name to: bs-demo
