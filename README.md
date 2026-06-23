@@ -63,7 +63,7 @@
 
 5. In the **Shape** section, click **Change Shape**
 
-6. Choose  **AMD** -> **VM.Standard.E4.Flex** with **1 OCPU** and **8 GB of Memory**
+6. Choose  **Ampere** -> **VM.Standard.A1.Flex** with **2 OCPU** and **8 GB of Memory**
 
 ![drawing](./SS/compute/4.png)
 
