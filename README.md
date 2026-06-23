@@ -455,7 +455,7 @@
     3. Leave all other options with their default values
 
     ⚠️ **Demo only:** Using port **22** for the Load Balancer health check is not recommended for production environments. We use it here only to simplify this lab demo⚠️
-    
+
 9. Set **Backend Set** name to: bs-demo
 
 10. Click **Next**
