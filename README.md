@@ -392,11 +392,17 @@
 
 2. Select the VCN we created earlier **VCN-demo**
 
-3. Follow those steps for each of the **private** & **public** subnets in your VCN:
+3. Repeat the following steps **twice**: once for the **private subnet** security list and once for the **public subnet** security list.
 
-    1. In the **Subnets** tab, click **private subnet/public-<your_vcn_name>**
+    You must add the ingress rule to **both** Security Lists:
+    - **security list for private subnet**
+    - **Default Security List for-<your_vcn_name>**
 
-    2. In the **Security** tab, click **security list for private subnet/Default Security List for-<your_vcn_name>>**
+    1. In the **Subnets** tab, click either **private subnet** or **public-<your_vcn_name>**
+
+    2. In the **Security** tab, click the Security List for the selected subnet:
+        - For the private subnet: **security list for private subnet**
+        - For the public subnet: **Default Security List for-<your_vcn_name>**
 
     3. Select **Security rules** tab
 
