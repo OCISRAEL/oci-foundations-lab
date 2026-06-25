@@ -1,7 +1,7 @@
 # OCI Foundation Workshop - The Lab
 
 ## The Architecture (Single AD)
-<img src="./SS/LabArch.png" alt="drawing" width="600">
+<img src="./SS/LabArch.png" alt="drawing">
 
 ## STEP 1 : Create Compartment
 ### Objective: Create a compartment to logically organize cloud resources.
