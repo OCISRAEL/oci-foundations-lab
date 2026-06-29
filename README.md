@@ -3,7 +3,7 @@
 ## The Architecture (Single AD)
 <img src="./SS/LabArch.png" alt="drawing">
 
-## STEP 1 : Create Compartment1
+## STEP 1 : Create Compartment
 ### Objective: Create a compartment to logically organize cloud resources.
 
 1. Open the navigation menu and click **Identity & Security**. Under **Identity**, click **Compartments**
